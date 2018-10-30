@@ -3,7 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import 'styles/border.css'
+import 'styles/reset.css'
+import 'styles/iconfont.css'
+import 'lib-flexible/flexible.js'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
