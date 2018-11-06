@@ -32,9 +32,9 @@
             <router-view name="page2" />
         -->
         <!--iconfont的使用-->
-        <i class="icon iconfont icon-online-shop"></i>
+        <!--<i class="icon iconfont icon-online-shop"></i>
         <i class="icon iconfont">&#xe6c6;</i>
-        <i class="icon iconfont icon-bukaixin"></i>
+        <i class="icon iconfont icon-bukaixin"></i>-->
     </div>
 </template>
 

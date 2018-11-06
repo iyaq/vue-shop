@@ -9,6 +9,13 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
+//mock数据
+const express = require('express')
+const app = express()
+var appData = require('../static/mock/index.json')
+var router = express.Router()
+//通过路由请求本地数据
+app.use('/api',router)
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -42,7 +49,16 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
-    }
+    },
+      // 添加before方法
+      before(app) {
+          app.get('/api/appData', (req, res) => {
+              res.json({
+                  errno: 0,
+                  data: appData
+              })
+          })
+      }
   },
   plugins: [
     new webpack.DefinePlugin({

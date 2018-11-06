@@ -1,0 +1,29 @@
+{
+  "code":0,
+  "msg":"",
+  "swiper":[
+    "http://www.gaoxinedu.com/$%7Bres%7D/img/student_service_self_service_registration.png",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541526422478&di=96a9cab0fb72e7db827c2584d5ddc586&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0157e659352583a8012193a3450dcd.jpg%402o.jpg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541526370159&di=64da7190051124ab971c62ad1294c07c&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F03%2F48%2F3847e4a7a58e5644768bdc34a0f09148.jpg"
+  ],
+  "recommonData":[
+    {
+      "imgurl":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1803574874,4213740994&fm=26&gp=0.jpg",
+      "type":"酒类",
+      "discount":"9.0",
+      "remainday":"2"
+    },
+    {
+      "imgurl":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541527012101&di=d27ca4eb49b2d0e8d27590a9b6fb930f&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01cae45541d75e0000011541e0d6aa.jpg",
+      "type":"香烟",
+      "discount":"9.5",
+      "remainday":"1"
+    },
+    {
+      "imgurl":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541527045212&di=d745d8dee135e3c5237409c722004a92&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ec5057fcf27fa84a0d304fba0b02.jpg%40900w_1l_2o_100sh.jpg",
+      "type":"零食",
+      "discount":"8.5",
+      "remainday":"3"
+    }
+  ]
+}

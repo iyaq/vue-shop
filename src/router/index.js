@@ -4,6 +4,8 @@ import Test from "@/view/test"
 import Page1 from "@/view/page1"
 import Page2 from "@/view/page2"
 import Goods from "@/view/goods"
+import Home from "@/view/home"
+import Classify from "@/view/classify"
 Vue.use(Router)
 
 export default new Router({
@@ -30,6 +32,18 @@ export default new Router({
           path:'/goods',
           name:'goods',
           component:Goods,
-      }
+      },
+      {
+          path:'/',
+          name:'Home',
+          components:{
+              default:Home,
+          },
+      },
+      {
+          path:'/classify',
+          name:'Classify',
+          component:Classify,
+      },
   ]
 })
