@@ -9,8 +9,13 @@ import 'styles/reset.css'
 import 'styles/iconfont.css'
 import 'lib-flexible/flexible.js'
 import './utils/rem.js'
+import ElementUI from 'element-ui';
+import {Button,AddressList,AddressEdit,Area} from 'vant';
+import '@/assets/css/overwrite.css'
+Vue.use(Button).use(AddressList).use(AddressEdit).use(Area);
 Vue.config.productionTip = false
 Vue.use(VueLazyload,{loading:'/static/img/ajax-loader.gif'});
+Vue.use(ElementUI);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -1,0 +1,15 @@
+.van-address-list .van-icon-checked{
+    color: darkred;
+}
+.van-address-list .van-button-danger{
+    background: darkred;
+}
+.van-cell{
+    /*height: 100px;
+    line-height: 100px;*/
+}
+.van-button--danger {
+    color: #fff;
+    background-color: darkred;
+    border: 0.03125rem solid darkred;
+}

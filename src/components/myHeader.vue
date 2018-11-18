@@ -1,44 +1,47 @@
 <template>
-    <div class="myHeader">
-        <i class="icon iconfont">&#xe751;</i>
-        <input type="text" class="searchBox">
-        <i class="icon iconfont">&#xe75e;</i>
+    <div class="header">
+        <i class="icon iconfont icon-xiangzuo1" @click="goBack()"></i>
+        <div class="title">{{$route.query.title}}</div>
+        <i class="icon iconfont icon-shouye" @click="goHome()"></i>
     </div>
 </template>
 
 <script>
     export default {
-        name: "my-header",
-        data(){
-            return {
-
-            }
+        name: "header",
+        methods:{
+            goBack(){
+                this.$router.go(-1);
+            },
+            goHome(){
+                this.$router.push({
+                    path:'/'
+                })
+            },
         }
     }
 </script>
 
 <style scoped lang="less">
-    .myHeader{
-        height: 50px;
+    .header {
         background: darkred;
-        width: 100%;
+        color: white;
+        height: 50px;
         line-height: 50px;
-        .iconfont{
-            color: white;
+        padding: 0 20px;
+        box-sizing: border-box;
+        .icon {
             display: inline-block;
-            float: left;
-            margin: 0px 15px;
-            &:nth-child(3){
-                float: right;
-            }
+            vertical-align: middle;
         }
-        .searchBox{
-            width: 70%;
-            height: 30px;
-            border-radius: 20px;
+        .icon-xiangzuo1 {
             float: left;
-            margin-top: 10px;
-            border: none;
+        }
+        .icon-shouye {
+            float: right;
+        }
+        div {
+            display: inline-block;
         }
     }
 </style>

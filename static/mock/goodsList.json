@@ -1,0 +1,35 @@
+{
+  "code":200,
+  "msg":"",
+  "goodslist":[
+    {
+      "goodId":0,
+      "goodImg":"https://img.alicdn.com/imgextra/i4/2670830951/O1CN01oLpJdx1Itb8K7NP1j_!!0-item_pic.jpg_430x430q90.jpg",
+      "desc":"熙世界V领撞色花边针织女款线衣",
+      "price":99.9,
+      "discount":180.0
+    },
+    {
+      "goodId":1,
+      "goodImg":"https://img.alicdn.com/imgextra/i4/2670830951/O1CN01oLpJdx1Itb8K7NP1j_!!0-item_pic.jpg_430x430q90.jpg",
+      "desc":"茵曼V领撞色花边针织女款线衣",
+      "price":199.9,
+      "discount":180.0
+    },
+    {
+      "goodId":2,
+      "goodImg":"https://img.alicdn.com/imgextra/i4/2670830951/O1CN01oLpJdx1Itb8K7NP1j_!!0-item_pic.jpg_430x430q90.jpg",
+      "desc":"花木马V领撞色花边针织女款线衣",
+      "price":299.9,
+      "discount":180.0
+    },
+    {
+      "goodId":3,
+      "goodImg":"https://img.alicdn.com/imgextra/i4/2670830951/O1CN01oLpJdx1Itb8K7NP1j_!!0-item_pic.jpg_430x430q90.jpg",
+      "desc":"对白V领撞色花边针织女款线衣",
+      "price":399.9,
+      "discount":180.0
+    }
+
+  ]
+}

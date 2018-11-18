@@ -3,25 +3,9 @@
         <my-header></my-header>
         <Carousel :swiperData = 'swiperData'></Carousel>
         <div class="class_top">
-            <div >
-                <i class="icon iconfont">&#xe7b7;</i>
-                <span>酒类</span>
-            </div>
-            <div >
-                <i class="icon iconfont">&#xe7b2;</i>
-                <span>香烟</span>
-            </div>
-            <div >
-                <i class="icon iconfont">&#xe7b6;</i>
-                <span>饮料</span>
-            </div>
-            <div >
-                <i class="icon iconfont">&#xe7ba;</i>
-                <span>零食</span>
-            </div>
-            <div >
-                <i class="icon iconfont">&#xe7b1;</i>
-                <span>日用</span>
+            <div v-for="item in classify" @click="gotoClassify(item.id)">
+                <i class="icon iconfont" :class="item.icon"></i>
+                <span>{{item.name}}</span>
             </div>
         </div>
         <div class="recommend">
@@ -51,6 +35,7 @@
             return {
                 swiperData:[],
                 recommonData:[],
+                classify:[],
             }
         },
         mounted(){
@@ -62,7 +47,16 @@
                     .then(response => {
                         this.swiperData = response.data.swiper;
                         this.recommonData = response.data.recommonData;
+                        this.classify = response.data.classify;
                     })
+            },
+            gotoClassify(id){
+                this.$router.push({
+                    path:"/classify",
+                    query:{
+                        id:id
+                    }
+                })
             }
         }
     }

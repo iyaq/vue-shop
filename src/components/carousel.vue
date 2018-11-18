@@ -4,7 +4,8 @@
             <md-card-media>-->
                 <!-- swiper -->
                 <swiper :options="swiperOption" ref="mySwiper">
-                    <swiper-slide v-for="(item,index) in swiperData" :key="index"><img :src="item" alt=""></swiper-slide>
+                    <swiper-slide v-for="(item,index) in swiperData" :key="index">
+                        <img :src="item" alt="" @click="swiperImgClick"></swiper-slide>
                     <div class="swiper-pagination" slot="pagination"></div>
                 </swiper>
             <!--</md-card-media>
@@ -21,7 +22,7 @@
         props:{
             swiperData:{
                 type:Array,
-                default:[]
+                default:()=>[]
             }
         },
         data() {
@@ -45,6 +46,11 @@
         },
         mounted(){
             this.swiper.slideTo(3,1000,false);
+        },
+        methods:{
+            swiperImgClick(){
+                this.$emit('swiperImgClick')
+            }
         }
     }
 </script>
@@ -57,7 +63,6 @@
         .swiper-wrapper{
             width: 100%;
             height: 250px;
-
             img{
                 width: 100%;
                 height: 100%;

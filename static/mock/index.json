@@ -6,6 +6,33 @@
     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541526422478&di=96a9cab0fb72e7db827c2584d5ddc586&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0157e659352583a8012193a3450dcd.jpg%402o.jpg",
     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541526370159&di=64da7190051124ab971c62ad1294c07c&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F03%2F48%2F3847e4a7a58e5644768bdc34a0f09148.jpg"
   ],
+  "classify":[
+    {
+      "id":"1",
+      "name":"酒类",
+      "icon":"icon-nvzhuang"
+    },
+    {
+      "id":"2",
+      "name":"香烟",
+      "icon":"icon-xiangbao"
+    },
+    {
+      "id":"3",
+      "name":"饮料",
+      "icon":"icon-kuzi"
+    },
+    {
+      "id":"4",
+      "name":"零食",
+      "icon":"icon-jujia"
+    },
+    {
+      "id":"5",
+      "name":"日用",
+      "icon":"icon-jujia"
+    }
+  ],
   "recommonData":[
     {
       "imgurl":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1803574874,4213740994&fm=26&gp=0.jpg",
