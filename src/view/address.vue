@@ -17,6 +17,7 @@
 </template>
 
 <script>
+    import {mapGetters} from 'vuex'
     export default {
         name: "address",
         data(){
@@ -45,6 +46,22 @@
                             }
                         ]
             }
+        },
+        created(){
+            // this.list = JSON.parse(localStorage.getItem("address"))
+        },
+        mounted(){
+            let addresslist = this.getAddress;
+            this.list = this.getAddress;
+            addresslist.forEach((element,idx)=>{
+                element.id = idx+"";
+                if(element.isDefault){
+                    this.chosenAddressId = element.id;
+                }
+            })
+        },
+        computed:{
+          ...mapGetters(["getAddress"])
         },
         methods:{
             onAdd() {

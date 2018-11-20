@@ -14,7 +14,7 @@ import AddressEdit from "@/view/addressEdit"
 Vue.use(Router)
 
 export default new Router({
-    mode:'history',
+  mode:'history',
   routes: [
 
     {

@@ -20,6 +20,7 @@
 
 <script>
     import areaList from "@/assets/js/area"
+    import { mapMutations } from 'vuex'
     export default {
         name: "address-edit",
         data() {
@@ -42,6 +43,10 @@
                 data.postalCode = e.postalCode;
                 data.isDefault = e.isDefault;
                 console.log(data);
+                // let addressData = JSON.parse(localStorage.getItem("address"))||[];
+                // addressData.push(data);
+                this.saveAddress(data);
+                // localStorage.setItem("address",JSON.stringify(addressData));
             },
             onDelete() {
                 Toast('delete');
@@ -55,7 +60,8 @@
                 } else {
                     this.searchResult = [];
                 }
-            }
+            },
+            ...mapMutations(["saveAddress"])
         }
     }
 </script>

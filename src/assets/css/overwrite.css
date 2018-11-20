@@ -13,3 +13,16 @@
     background-color: darkred;
     border: 0.03125rem solid darkred;
 }
+.van-address-item__address,.van-address-item__name{
+    line-height: 30px;
+}
+.van-field .van-cell__title {
+    max-width: 100px;
+    line-height: 30px;
+    text-align: right;
+    margin-right: 10px;
+}
+.van-cell__value{
+    text-align: left;
+    line-height: 30px;
+}

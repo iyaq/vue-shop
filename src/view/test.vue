@@ -35,13 +35,20 @@
         <!--<i class="icon iconfont icon-online-shop"></i>
         <i class="icon iconfont">&#xe6c6;</i>
         <i class="icon iconfont icon-bukaixin"></i>-->
+        <!--vuex學習-->
+        <!--<h3>{{this.city}}</h3>-->
+        <h3>{{this.currentCity}}</h3>
     </div>
 </template>
 
 <script>
-
+    import {mapState,mapGetters} from 'vuex'
     export default {
         name: "test",
+        computed:{
+           // ...mapState(['city'])
+           ...mapGetters(['currentCity'])
+        },
         methods:{
             gotogoods(){
                 this.$router.push('/goods');
