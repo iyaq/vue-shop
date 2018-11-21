@@ -10,11 +10,11 @@ import 'styles/iconfont.css'
 import 'lib-flexible/flexible.js'
 import './utils/rem.js'
 import ElementUI from 'element-ui';
-import {Button,AddressList,AddressEdit,Area,Icon} from 'vant';
+import {Button,AddressList,AddressEdit,Area,Icon,Card} from 'vant';
 import '@/assets/css/overwrite.css'
 import store from '../store'
 
-Vue.use(Button).use(AddressList).use(AddressEdit).use(Area).use(Icon);
+Vue.use(Button).use(AddressList).use(AddressEdit).use(Area).use(Icon).use(Card);
 Vue.config.productionTip = false
 Vue.use(VueLazyload,{loading:'/static/img/ajax-loader.gif'});
 Vue.use(ElementUI);

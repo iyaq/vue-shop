@@ -1,9 +1,6 @@
 <template>
     <div class="addressEdit">
-        <div class="topNav">
-            <i class="icon iconfont icon-xiangzuo1" @click="goBack()"></i>
-            <div class="title">地址编辑</div>
-        </div>
+        <secondHeader>地址编辑</secondHeader>
         <van-address-edit
                 :area-list="areaList"
                 show-postal
@@ -21,6 +18,7 @@
 <script>
     import areaList from "@/assets/js/area"
     import { mapMutations } from 'vuex'
+    import secondHeader from '../components/secondHeader'
     export default {
         name: "address-edit",
         data() {
@@ -28,6 +26,9 @@
                 areaList,
                 searchResult: []
             }
+        },
+        components:{
+            secondHeader
         },
         methods:{
             goBack(){

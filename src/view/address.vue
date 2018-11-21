@@ -1,9 +1,6 @@
 <template>
     <div class="address">
-        <div class="topNav">
-            <i class="icon iconfont icon-xiangzuo1" @click="goBack()"></i>
-            <div class="title">请选择收货地址</div>
-        </div>
+        <secondHeader>请选择收货地址</secondHeader>
         <van-address-list
                 v-model="chosenAddressId"
                 :list="list"
@@ -18,6 +15,7 @@
 
 <script>
     import {mapGetters} from 'vuex'
+    import secondHeader from '../components/secondHeader'
     export default {
         name: "address",
         data(){
@@ -46,6 +44,9 @@
                             }
                         ]
             }
+        },
+        components:{
+            secondHeader
         },
         created(){
             // this.list = JSON.parse(localStorage.getItem("address"))

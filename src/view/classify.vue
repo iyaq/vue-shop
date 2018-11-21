@@ -1,10 +1,6 @@
 <template>
     <div class="classify">
-        <div class="topNav">
-            <i class="icon iconfont icon-xiangzuo1" @click="goBack()"></i>
-            <div class="title">分类</div>
-            <i class="icon iconfont icon-shouye" @click="goHome()"></i>
-        </div>
+        <secondHeader>分类</secondHeader>
         <div class="main" :style="{height:mainHeight}">
             <div class="leftNav wrapper" :style="{height:mainHeight}" ref="wrapper">
                 <div class="item content" v-for="(item,index) in classify" :class="currentIndex ==item.id?'item_on':''" @click="menuClick(item.id)">{{item.name}}</div>
@@ -36,9 +32,10 @@
 <script>
     import BScroll from "better-scroll"
     import axios from "axios"
+    import secondHeader from '../components/secondHeader'
     export default {
         name: "classify",
-        components:{BScroll},
+        components:{BScroll,secondHeader},
         data(){
             return {
                 mainHeight:{},

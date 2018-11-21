@@ -26,3 +26,47 @@
     text-align: left;
     line-height: 30px;
 }
+.van-card__thumb{
+    /*height: inherit;*/
+    width: 135px;
+    height: auto;
+}
+.van-card__thumb img{
+    height: 100%;
+    width: 100%;
+}
+.van-card__title{
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    max-height: fit-content;
+}
+.van-card__desc{
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    height: 16px;
+    max-height: fit-content;
+    height: 20px;
+}
+.van-card__content{
+    padding-left:50px;
+    box-sizing: border-box;
+}
+.van-button--mini{
+    border: 1px solid #999;
+    padding: 5px 15px;
+    width: fit-content;
+    line-height: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.van-button--mini span{
+    display: block;
+    line-height: 24px;
+}
+.van-card__footer{
+    bottom: -30px;
+}
